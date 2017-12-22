@@ -1,0 +1,76 @@
+<view class='my-page' style='height:{{screenHeight}}px'>
+  <view class='header'>
+      <view class='header-icon'>
+        <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <view class='account-info'>
+        <view class='nickname'>{{userInfo.nickName}}</view>
+        <view class='accountname'>账号:dingbaosheng</view>
+      </view>
+  </view>
+  <view class="my-content">
+    <view >
+      <view class="my-item"  data-aa="0" bindtap="showHide" >
+        <image class='icon' src='/images/order.png'></image>
+        <view>全部订单</view>
+        <image class='nav' src='/images/nav.png'></image>
+      </view>
+      <view class="goods-lable-hidde {{show==0&&showflag ? 'goods-lable-show' : ''}}">
+        <view class='goods-lable-hidde-item'>
+          <view>
+            <view class='hidden-item-title'>限购</view>
+          </view>
+          <view class='hidden-item-desc'>购买不超过20件时享受优惠，超出数量我们不知道到底会怎么样</view>
+        </view>
+      </view>
+    </view>
+  <view >
+      <view class='my-item border-top' data-aa="1"  bindtap="showHide">
+        <image class='icon' src='/images/pre-order.png'></image>
+        <view>待付款</view>
+        <image class='nav' src='/images/nav.png'></image>
+      </view>
+      <view class="goods-lable-hidde {{show == 1&&showflag ? 'goods-lable-show' : ''}}">
+        <view class='goods-lable-hidde-item'>
+          <view>
+            <view class='hidden-item-title'>限购</view>
+          </view>
+          <view class='hidden-item-desc'>购买不超过20件时享受优惠，超出数量我们不知道到底会怎么样</view>
+        </view>
+      </view>
+    </view>
+    <view>    
+      <view class='my-item border-top' data-aa="2" bindtap="showHide">
+      
+        <image class='icon' src='/images/pre-accept.png'></image>
+        <view>待收货</view>
+        <image class='nav' src='/images/nav.png'></image>
+      </view>
+      <view class="goods-lable-hidde {{show == 2&&showflag? 'goods-lable-show' : ''}}">
+      <view class='goods-lable-hidde-item'>
+        <view>
+          <view class='hidden-item-title'>限购</view>
+        </view>
+        <view class='hidden-item-desc'>购买不超过20件时享受优惠，超出数量我们不知道到底会怎么样</view>
+      </view>
+      
+      </view>
+    </view>
+    <view >
+      <view class='my-item border-top' data-aa="3" bindtap="showHide">
+          <image class='icon' src='/images/shouhou.png'></image>
+          <view>售后订单</view>
+          <image class='nav' src='/images/nav.png'></image> 
+      </view>
+
+      <view class="goods-lable-hidde {{show==3&&showflag ? 'goods-lable-show' : ''}}">
+      <view class='goods-lable-hidde-item'>
+        <view>
+          <view class='hidden-item-title'>限购</view>
+        </view>
+        <view class='hidden-item-desc'>购买不超过20件时享受优惠，超出数量我们不知道到底会怎么样</view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>
